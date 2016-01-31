@@ -43,15 +43,19 @@
       "dominant": true
     },
     "filesCreated": {
-      "collection": "comment",
-      "via": "createdBy"
-    },
-    "articles": {
       "collection": "article",
-      "via": "contributors"
+      "via": "createdBy"
     },
     "comments": {
       "collection": "comment",
+      "via": "contributors"
+    },
+    "languages": {
+      "collection": "language",
+      "via": "contributors"
+    },
+    "articles": {
+      "collection": "article",
       "via": "contributors"
     }
   },

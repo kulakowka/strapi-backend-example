@@ -35,5 +35,15 @@
   },
   "autoCreatedAt": true,
   "autoUpdatedAt": true,
-  "migrate": "alter"
+  "migrate": "drop",
+  "templates": {
+    "default": {
+      "attributes": {
+        "content": {
+          "type": "text"
+        }
+      },
+      "displayedAttribute": "content"
+    }
+  }
 }

@@ -1,18 +1,29 @@
 {
-  "identity": "article",
+  "identity": "language",
   "connection": "mongodb_main",
   "defaultTemplate": "default",
   "displayedAttribute": "",
   "schema": true,
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     },
-    "content": {
-      "type": "text"
-    },
-    "sourceUrl": {
+    "slug": {
       "type": "string"
+    },
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "languages"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "languages"
     },
     "lang": {
       "type": "string",
@@ -24,24 +35,6 @@
     },
     "id_ref": {
       "type": "int"
-    },
-    "createdBy": {
-      "model": "user"
-    },
-    "updatedBy": {
-      "model": "user"
-    },
-    "contributors": {
-      "collection": "user",
-      "via": "articles"
-    },
-    "comments": {
-      "collection": "comment",
-      "via": "article"
-    },
-    "languages": {
-      "collection": "language",
-      "via": "articles"
     }
   },
   "autoCreatedAt": true,
@@ -50,17 +43,14 @@
   "templates": {
     "default": {
       "attributes": {
-        "title": {
+        "name": {
           "type": "string"
         },
-        "content": {
-          "type": "text"
-        },
-        "sourceUrl": {
+        "slug": {
           "type": "string"
         }
       },
-      "displayedAttribute": "title"
+      "displayedAttribute": "name"
     }
   }
 }
