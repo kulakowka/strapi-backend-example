@@ -33,7 +33,8 @@ module.exports = {
   findOne: function * () {
     this.model = model;
     try {
-      const entry = yield strapi.hooks.blueprints.findOne(this);
+      // const entry = yield strapi.hooks.blueprints.findOne(this);
+      const entry = yield User.findOne(this.params);
       this.body = entry;
     } catch (err) {
       this.body = err;
