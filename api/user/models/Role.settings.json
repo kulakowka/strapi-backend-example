@@ -1,0 +1,21 @@
+{
+  "identity": "role",
+  "connection": "mongodb_main",
+  "displayedAttribute": "name",
+  "schema": true,
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "routes": {
+      "collection": "route",
+      "via": "roles"
+    },
+    "users": {
+      "collection": "user",
+      "via": "roles"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

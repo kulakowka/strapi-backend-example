@@ -1,0 +1,17 @@
+{
+  "default": {
+    "attributes": {
+      "title": {
+        "required": true,
+        "maxLength": 200
+      },
+      "content": {
+        "maxLength": 100000
+      },
+      "sourceUrl": {
+        "maxLength": 2000
+      }
+    },
+    "displayedAttribute": "title"
+  }
+}

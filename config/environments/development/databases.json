@@ -1,0 +1,31 @@
+{
+  "orm": {
+    "adapters": {
+      "disk": "sails-disk",
+      "mongo": "sails-mongo"
+    },
+    "defaultConnection": "default",
+    "connections": {
+      "default": {
+        "adapter": "disk",
+        "filePath": ".tmp/",
+        "fileName": "default.db",
+        "migrate": "alter"
+      },
+      "permanent": {
+        "adapter": "disk",
+        "filePath": "./data/",
+        "fileName": "permanent.db",
+        "migrate": "alter"
+      },
+      "mongodb_main": {
+        "adapter": "mongo",
+        "host": "localhost",
+        "port": 27017,
+        "user": "",
+        "password": "",
+        "database": "libtuts_v1"
+      }
+    }
+  }
+}

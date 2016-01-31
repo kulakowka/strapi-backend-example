@@ -1,0 +1,18 @@
+{
+  "static": true,
+  "views": false,
+  "websockets": false,
+  "favicon": {
+    "path": "favicon.ico",
+    "maxAge": 86400000
+  },
+  "prefix": "",
+  "blueprints": {
+    "defaultLimit": 30,
+    "populate": false
+  },
+  "graphql": {
+    "enabled": true,
+    "route": "/graphql"
+  }
+}

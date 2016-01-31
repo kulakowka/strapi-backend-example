@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /comment": {
+      "controller": "Comment",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /comment/:id": {
+      "controller": "Comment",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /comment": {
+      "controller": "Comment",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /comment/:id": {
+      "controller": "Comment",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /comment/:id": {
+      "controller": "Comment",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /comment/:parentId/:relation": {
+      "controller": "Comment",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /comment/:parentId/:relation/:id": {
+      "controller": "Comment",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}
