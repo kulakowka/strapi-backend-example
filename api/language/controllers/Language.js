@@ -41,6 +41,26 @@ module.exports = {
   },
 
   /**
+   * Get a specific Language by :slug.
+   *
+   * @return {Object|Array}
+   */
+
+  findBySlug: function * () {
+    try {
+      const language = yield Language.findOne({ slug: this.params.slug });
+
+      if (_.isEmpty(language)) {
+        this.status = 404;
+      } else {
+        this.body = language;
+      }
+    } catch (err) {
+      this.body = err;
+    }
+  },
+
+  /**
    * Create a Language entry.
    *
    * @return {Object}

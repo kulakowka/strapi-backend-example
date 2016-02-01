@@ -8,16 +8,8 @@
     "name": {
       "type": "string"
     },
-    "lang": {
-      "type": "string",
-      "required": true
-    },
-    "template": {
-      "type": "string",
-      "required": true
-    },
-    "id_ref": {
-      "type": "int"
+    "slug": {
+      "type": "string"
     },
     "createdBy": {
       "model": "user"
@@ -32,6 +24,17 @@
     "articles": {
       "collection": "article",
       "via": "platforms"
+    },
+    "lang": {
+      "type": "string",
+      "required": true
+    },
+    "template": {
+      "type": "string",
+      "required": true
+    },
+    "id_ref": {
+      "type": "int"
     }
   },
   "autoCreatedAt": true,

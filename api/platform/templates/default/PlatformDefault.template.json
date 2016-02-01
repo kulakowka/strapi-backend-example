@@ -3,6 +3,9 @@
     "attributes": {
       "name": {
         "required": true
+      },
+      "slug": {
+        "required": true
       }
     },
     "displayedAttribute": "name"

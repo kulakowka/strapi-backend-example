@@ -41,6 +41,26 @@ module.exports = {
   },
 
   /**
+   * Get a specific Platform by :slug.
+   *
+   * @return {Object|Array}
+   */
+
+  findBySlug: function * () {
+    try {
+      const platform = yield Platform.findOne({ slug: this.params.slug });
+
+      if (_.isEmpty(platform)) {
+        this.status = 404;
+      } else {
+        this.body = platform;
+      }
+    } catch (err) {
+      this.body = err;
+    }
+  },
+
+  /**
    * Create a Platform entry.
    *
    * @return {Object}

@@ -7,9 +7,9 @@
         "isAuthorized"
       ]
     },
-    "GET /user/:id": {
+    "GET /user/:username": {
       "controller": "User",
-      "action": "findOne",
+      "action": "findByUsername",
       "policies": [
         "isAuthorized"
       ]

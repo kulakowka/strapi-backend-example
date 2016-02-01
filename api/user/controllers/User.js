@@ -41,6 +41,26 @@ module.exports = {
   },
 
   /**
+   * Get a specific User by username
+   *
+   * @return {Object|Array}
+   */
+
+  findByUsername: function * () {
+    try {
+      const user = yield User.findOne({ username: this.params.username });
+
+      if (_.isEmpty(user)) {
+        this.status = 404;
+      } else {
+        this.body = user;
+      }
+    } catch (err) {
+      this.body = err;
+    }
+  },
+
+  /**
    * Create a user entry.
    *
    * @return {Object}

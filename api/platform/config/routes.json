@@ -7,9 +7,9 @@
         "isAuthorized"
       ]
     },
-    "GET /platform/:id": {
+    "GET /platform/:slug": {
       "controller": "Platform",
-      "action": "findOne",
+      "action": "findBySlug",
       "policies": [
         "isAuthorized"
       ]

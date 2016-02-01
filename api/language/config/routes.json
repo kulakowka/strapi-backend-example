@@ -7,9 +7,9 @@
         "isAuthorized"
       ]
     },
-    "GET /language/:id": {
+    "GET /language/:slug": {
       "controller": "Language",
-      "action": "findOne",
+      "action": "findBySlug",
       "policies": [
         "isAuthorized"
       ]
