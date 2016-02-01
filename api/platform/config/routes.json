@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /platform": {
+      "controller": "Platform",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /platform/:id": {
+      "controller": "Platform",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /platform": {
+      "controller": "Platform",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /platform/:id": {
+      "controller": "Platform",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /platform/:id": {
+      "controller": "Platform",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /platform/:parentId/:relation": {
+      "controller": "Platform",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /platform/:parentId/:relation/:id": {
+      "controller": "Platform",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}

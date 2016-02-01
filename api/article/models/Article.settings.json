@@ -42,11 +42,15 @@
     "languages": {
       "collection": "language",
       "via": "articles"
+    },
+    "platforms": {
+      "collection": "platform",
+      "via": "articles"
     }
   },
   "autoCreatedAt": true,
   "autoUpdatedAt": true,
-  "migrate": "drop",
+  "migrate": "alter",
   "templates": {
     "default": {
       "attributes": {

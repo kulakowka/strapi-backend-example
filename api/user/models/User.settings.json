@@ -43,7 +43,7 @@
       "dominant": true
     },
     "filesCreated": {
-      "collection": "article",
+      "collection": "platform",
       "via": "createdBy"
     },
     "comments": {
@@ -56,6 +56,10 @@
     },
     "articles": {
       "collection": "article",
+      "via": "contributors"
+    },
+    "platforms": {
+      "collection": "platform",
       "via": "contributors"
     }
   },
