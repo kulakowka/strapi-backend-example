@@ -5,7 +5,7 @@
  */
 const data = [
   {slug: 'go', name: 'Go'},
-  {slug: 'npm', name: 'npm'},
+  {slug: 'npm', name: 'NPM'},
   {slug: 'maven', name: 'Maven'},
   {slug: 'rubygems', name: 'Rubygems'},
   {slug: 'packagist', name: 'Packagist'},

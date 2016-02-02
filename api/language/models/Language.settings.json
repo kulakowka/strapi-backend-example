@@ -11,6 +11,10 @@
     "slug": {
       "type": "string"
     },
+    "projectsCount": {
+      "type": "integer",
+      "defaultsTo": 0
+    },
     "createdBy": {
       "model": "user"
     },
@@ -31,6 +35,14 @@
     },
     "id_ref": {
       "type": "int"
+    },
+    "tutorials": {
+      "collection": "tutorial",
+      "via": "languages"
+    },
+    "projects": {
+      "collection": "project",
+      "via": "language"
     }
   },
   "autoCreatedAt": true,
@@ -44,6 +56,10 @@
         },
         "slug": {
           "type": "string"
+        },
+        "projectsCount": {
+          "type": "integer",
+          "defaultsTo": 0
         }
       },
       "displayedAttribute": "name"

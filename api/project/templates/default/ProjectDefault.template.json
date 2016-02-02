@@ -1,0 +1,29 @@
+{
+  "default": {
+    "attributes": {
+      "name": {
+        "required": true,
+        "maxLength": 400
+      },
+      "homepageUrl": {
+        "maxLength": 2000
+      },
+      "repositoryUrl": {
+        "maxLength": 2000
+      },
+      "packageManagerUrl": {
+        "maxLength": 2000
+      },
+      "description": {
+        "maxLength": 2000
+      },
+      "keywords": {},
+      "slug": {
+        "maxLength": 100,
+        "required": true
+      },
+      "tutorialsCount": {}
+    },
+    "displayedAttribute": "name"
+  }
+}

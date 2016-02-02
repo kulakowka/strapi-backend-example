@@ -5,40 +5,68 @@
   "displayedAttribute": "",
   "schema": true,
   "attributes": {
-  "title": {
-    "type": "string"
+    "title": {
+      "type": "string"
+    },
+    "sourceUrl": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "array"
+    },
+    "lang": {
+      "type": "string",
+      "required": true
+    },
+    "template": {
+      "type": "string",
+      "required": true
+    },
+    "id_ref": {
+      "type": "int"
+    },
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "tutorials"
+    },
+    "platforms": {
+      "collection": "platform",
+      "via": "tutorials"
+    },
+    "languages": {
+      "collection": "language",
+      "via": "tutorials"
+    }
   },
-  "sourceUrl": {
-    "type": "string"
-  },
-  "content": {
-    "type": "text"
-  },
-  "keywords": {
-    "type": "array"
-  },
-  "lang": {
-    "type": "string",
-    "required": true
-  },
-  "template": {
-    "type": "string",
-    "required": true
-  },
-  "id_ref": {
-    "type": "int"
-  },
-  "createdBy": {
-    "model": "user"
-  },
-  "updatedBy": {
-    "model": "user"
-  },
-  "contributors": {
-    "collection": "user",
-    "via": "tutorials"
-  }
-},
   "autoCreatedAt": true,
-  "autoUpdatedAt": true
+  "autoUpdatedAt": true,
+  "migrate": "alter",
+  "templates": {
+    "default": {
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "sourceUrl": {
+          "type": "string"
+        },
+        "content": {
+          "type": "text"
+        },
+        "keywords": {
+          "type": "array"
+        }
+      },
+      "displayedAttribute": "title"
+    }
+  }
 }

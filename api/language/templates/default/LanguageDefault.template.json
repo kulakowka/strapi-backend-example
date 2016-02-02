@@ -6,7 +6,8 @@
       },
       "slug": {
         "required": true
-      }
+      },
+      "projectsCount": {}
     },
     "displayedAttribute": "name"
   }
