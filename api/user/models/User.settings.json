@@ -43,7 +43,7 @@
       "dominant": true
     },
     "filesCreated": {
-      "collection": "project",
+      "collection": "tutorial",
       "via": "createdBy"
     },
     "languages": {
@@ -54,12 +54,12 @@
       "collection": "platform",
       "via": "contributors"
     },
-    "tutorials": {
-      "collection": "tutorial",
-      "via": "contributors"
-    },
     "projects": {
       "collection": "project",
+      "via": "contributors"
+    },
+    "tutorials": {
+      "collection": "tutorial",
       "via": "contributors"
     }
   },

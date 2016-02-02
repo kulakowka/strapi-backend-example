@@ -55,6 +55,10 @@
     },
     "id_ref": {
       "type": "int"
+    },
+    "tutorials": {
+      "collection": "tutorial",
+      "via": "projects"
     }
   },
   "autoCreatedAt": true,

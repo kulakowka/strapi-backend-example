@@ -45,6 +45,10 @@
     "languages": {
       "collection": "language",
       "via": "tutorials"
+    },
+    "projects": {
+      "collection": "project",
+      "via": "tutorials"
     }
   },
   "autoCreatedAt": true,

@@ -36,13 +36,13 @@
     "id_ref": {
       "type": "int"
     },
-    "tutorials": {
-      "collection": "tutorial",
-      "via": "languages"
-    },
     "projects": {
       "collection": "project",
       "via": "language"
+    },
+    "tutorials": {
+      "collection": "tutorial",
+      "via": "languages"
     }
   },
   "autoCreatedAt": true,
