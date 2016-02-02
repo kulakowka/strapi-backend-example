@@ -9,17 +9,22 @@
  */
 
 module.exports.bootstrap = function (cb) {
-  const fixtures = require('../../api/user/config/fixtures/index');
+  const userFixtures = require('../../api/user/config/fixtures/index');
+  const platformFixtures = require('../../api/platform/config/fixtures/index');
+  const languageFixtures = require('../../api/language/config/fixtures/index');
 
-  fixtures.role.create()
-    .then(function () {
-      return fixtures.route.create();
-    })
-    .then(function () {
-      cb();
-    })
-    .catch(function (err) {
-      strapi.log.error(err);
-      cb(err);
-    });
+  var promise = Promise.all([
+    userFixtures.role.create().then(function () {
+      return userFixtures.route.create();
+    }),
+    platformFixtures.platform.create(),
+    languageFixtures.language.create()
+  ]);
+  promise.then(function () {
+    cb();
+  })
+  .catch(function (err) {
+    strapi.log.error(err);
+    cb(err);
+  });
 };

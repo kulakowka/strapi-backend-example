@@ -1,15 +1,15 @@
 'use strict';
 
-const model = 'article';
+const model = 'tutorial';
 
 /**
- * A set of functions called "actions" for `Article`
+ * A set of functions called "actions" for `Tutorial`
  */
 
 module.exports = {
 
   /**
-   * Get Article entries.
+   * Get Tutorial entries.
    *
    * @return {Object|Array}
    */
@@ -25,7 +25,7 @@ module.exports = {
   },
 
   /**
-   * Get a specific Article.
+   * Get a specific Tutorial.
    *
    * @return {Object|Array}
    */
@@ -41,7 +41,7 @@ module.exports = {
   },
 
   /**
-   * Create a Article entry.
+   * Create a Tutorial entry.
    *
    * @return {Object}
    */
@@ -57,7 +57,7 @@ module.exports = {
   },
 
   /**
-   * Update a Article entry.
+   * Update a Tutorial entry.
    *
    * @return {Object}
    */
@@ -73,7 +73,7 @@ module.exports = {
   },
 
   /**
-   * Destroy a Article entry.
+   * Destroy a Tutorial entry.
    *
    * @return {Object}
    */
@@ -89,7 +89,7 @@ module.exports = {
   },
 
   /**
-   * Add an entry to a specific Article.
+   * Add an entry to a specific Tutorial.
    *
    * @return {Object}
    */
@@ -105,7 +105,7 @@ module.exports = {
   },
 
   /**
-   * Remove a specific entry from a specific Article.
+   * Remove a specific entry from a specific Tutorial.
    *
    * @return {Object}
    */

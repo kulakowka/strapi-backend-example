@@ -1,52 +1,52 @@
 {
   "routes": {
-    "GET /article": {
-      "controller": "Article",
+    "GET /tutorial": {
+      "controller": "Tutorial",
       "action": "find",
       "policies": [
         "isAuthorized"
       ]
     },
-    "GET /article/:id": {
-      "controller": "Article",
+    "GET /tutorial/:id": {
+      "controller": "Tutorial",
       "action": "findOne",
       "policies": [
         "isAuthorized"
       ]
     },
-    "POST /article": {
-      "controller": "Article",
+    "POST /tutorial": {
+      "controller": "Tutorial",
       "action": "create",
       "policies": [
         "isAuthorized",
         "addDataCreate"
       ]
     },
-    "PUT /article/:id": {
-      "controller": "Article",
+    "PUT /tutorial/:id": {
+      "controller": "Tutorial",
       "action": "update",
       "policies": [
         "isAuthorized",
         "addDataUpdate"
       ]
     },
-    "DELETE /article/:id": {
-      "controller": "Article",
+    "DELETE /tutorial/:id": {
+      "controller": "Tutorial",
       "action": "destroy",
       "policies": [
         "isAuthorized"
       ]
     },
-    "POST /article/:parentId/:relation": {
-      "controller": "Article",
+    "POST /tutorial/:parentId/:relation": {
+      "controller": "Tutorial",
       "action": "add",
       "policies": [
         "isAuthorized",
         "addDataCreate"
       ]
     },
-    "DELETE /article/:parentId/:relation/:id": {
-      "controller": "Article",
+    "DELETE /tutorial/:parentId/:relation/:id": {
+      "controller": "Tutorial",
       "action": "remove",
       "policies": [
         "isAuthorized",

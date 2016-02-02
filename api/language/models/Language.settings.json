@@ -21,10 +21,6 @@
       "collection": "user",
       "via": "languages"
     },
-    "articles": {
-      "collection": "article",
-      "via": "languages"
-    },
     "lang": {
       "type": "string",
       "required": true
@@ -39,7 +35,7 @@
   },
   "autoCreatedAt": true,
   "autoUpdatedAt": true,
-  "migrate": "drop",
+  "migrate": "alter",
   "templates": {
     "default": {
       "attributes": {

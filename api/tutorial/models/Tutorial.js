@@ -14,11 +14,11 @@ const anchor = require('anchor');
 // Local dependencies.
 const WLValidationError = require('../../../node_modules/waterline/lib/waterline/error/WLValidationError');
 
-// Settings for the Article model.
-const settings = require('./Article.settings.json');
+// Settings for the Tutorial model.
+const settings = require('./Tutorial.settings.json');
 
 /**
- * Export the Article model
+ * Export the Tutorial model
  */
 
 module.exports = {

@@ -3,14 +3,15 @@
     "attributes": {
       "title": {
         "required": true,
-        "maxLength": 200
-      },
-      "content": {
-        "maxLength": 100000
+        "maxLength": 400
       },
       "sourceUrl": {
         "maxLength": 2000
-      }
+      },
+      "content": {
+        "maxLength": 200000
+      },
+      "keywords": {}
     },
     "displayedAttribute": "title"
   }

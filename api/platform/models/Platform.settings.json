@@ -21,10 +21,6 @@
       "collection": "user",
       "via": "platforms"
     },
-    "articles": {
-      "collection": "article",
-      "via": "platforms"
-    },
     "lang": {
       "type": "string",
       "required": true
@@ -39,5 +35,18 @@
   },
   "autoCreatedAt": true,
   "autoUpdatedAt": true,
-  "migrate": "alter"
+  "migrate": "alter",
+  "templates": {
+    "default": {
+      "attributes": {
+        "name": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        }
+      },
+      "displayedAttribute": "name"
+    }
+  }
 }

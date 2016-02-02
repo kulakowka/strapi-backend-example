@@ -46,20 +46,16 @@
       "collection": "platform",
       "via": "createdBy"
     },
-    "comments": {
-      "collection": "comment",
-      "via": "contributors"
-    },
     "languages": {
       "collection": "language",
       "via": "contributors"
     },
-    "articles": {
-      "collection": "article",
-      "via": "contributors"
-    },
     "platforms": {
       "collection": "platform",
+      "via": "contributors"
+    },
+    "tutorials": {
+      "collection": "tutorial",
       "via": "contributors"
     }
   },
