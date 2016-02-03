@@ -7,9 +7,9 @@
         "isAuthorized"
       ]
     },
-    "GET /project/:id": {
+    "GET /project/:slug": {
       "controller": "Project",
-      "action": "findOne",
+      "action": "findBySlug",
       "policies": [
         "isAuthorized"
       ]

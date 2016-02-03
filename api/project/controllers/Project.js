@@ -41,6 +41,26 @@ module.exports = {
   },
 
   /**
+   * Get a specific Project by :slug.
+   *
+   * @return {Object|Array}
+   */
+
+  findBySlug: function * () {
+    try {
+      const project = yield Project.findOne({ slug: this.params.slug });
+
+      if (_.isEmpty(project)) {
+        this.status = 404;
+      } else {
+        this.body = project;
+      }
+    } catch (err) {
+      this.body = err;
+    }
+  },
+
+  /**
    * Create a Project entry.
    *
    * @return {Object}
